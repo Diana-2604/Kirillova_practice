@@ -5,7 +5,7 @@ int elemLenght = 3;
 
 Console.WriteLine($"TASK: Create new array from input array with elements less than or equal to {elemLenght} characters \n");
 
-int CountElements(string[] array, int elemLenght)
+int CountElements(string[] array)
   {
     int result = 0;
     int length = array.Length;
@@ -18,7 +18,7 @@ int CountElements(string[] array, int elemLenght)
 
 string[] MainTask(string[] inputArray)
 {
-    string[] outputArray = new string[CountElements(inputArray, elemLenght)];
+    string[] outputArray = new string[CountElements(inputArray)];
     int count = inputArray.Length;
     int index = 0;
     int i = 0;
